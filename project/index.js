@@ -11,7 +11,7 @@ const Categories=require("./routes/Categories")
 const Patient=require("./routes/Patient")
 app.listen(4000,"localhost",()=>
 {
-    console.log("server is running");
+    
 });
 app.use("/auth",auth);
 app.use("/medicines",medicines);
