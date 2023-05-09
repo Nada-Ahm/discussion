@@ -1,0 +1,16 @@
+.medicine-image {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.request-container {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.request-container p {
+    margin: 0;
+}
