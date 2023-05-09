@@ -18,7 +18,7 @@ const MyRequests = () => {
             .catch(err => {
                 setMyRequests({ ...myRequests, loading: false, err: "something went wrong,please try again later!" })
             })
-        // eslint-disable-next-line
+       
     }, [myRequests.reload]);
     return (
         <div className="manage-medicines p-5">
