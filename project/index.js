@@ -13,4 +13,7 @@ app.listen(4000,"localhost",()=>
 {
     console.log("server is running");
 });
-
+app.use("/auth",auth);
+app.use("/medicines",medicines);
+app.use("/categories",Categories);
+app.use("/patient",Patient);
