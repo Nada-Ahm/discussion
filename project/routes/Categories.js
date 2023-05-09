@@ -21,6 +21,10 @@ router.post("/createCategory", admin,
         .withMessage("description should be at least 20 characters"),
     async (req, res) => {
         try {
+            const errors = validationResult(req);
+            if (!errors.isEmpty()) {
+                return res.status(400).json({ errors: errors.array() });
+            }
             if (!req.file) {
                 return res.status(400).json({
                     errors: [
